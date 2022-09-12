@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+    height: 100vh;
+    width: 100vw;
+}
+.general {
+
+    display: flex;
+    flex-direction: row;  
+}
+.rectangulo1 {
+
+    height: 20em;
+    width: 10em;
+
+    background-color: rgb(189, 127, 255);
+    margin-left: 2em;
+
+}
+
+.rectangulo2 {
+
+    height: 20em;
+    width: 10em;
+    background-color: rgb(128, 0, 0);
+    margin-left: 2em;
+
+}
+@media (max-width: 800px) {
+    .general {
+        
+        flex-direction: column;
+    }
+}
