@@ -7,11 +7,19 @@ body{
 
     height: 100vh;
     width: 100vw;
+
+    height: 100vh;
+    width: 100vw;
 }
-.principal {
+.principal-01 {
 
     display: flex;
     flex-direction: row;  
+}
+.principal-02 {
+
+    display: flex;
+    flex-direction:row; 
 }
 .rectangulo01 {
 
@@ -19,8 +27,8 @@ body{
     width: 10em;
 
     background-color: rgb(189, 127, 255);
+    margin-top: 2em;
     margin-left: 2em;
-
 }
 
 .rectangulo02 {
@@ -28,12 +36,38 @@ body{
     height: 20em;
     width: 10em;
     background-color: rgb(128, 0, 0);
+    margin-top: 2em;
     margin-left: 2em;
-
 }
-@media (max-width: 800px) {
-    .principal {
+.rectangulo03 {
+
+    height: 20em;
+    width: 10em;
+    background-color: rgb(109, 128, 0);
+    margin-top: 2em;
+    margin-left: 2em;
+}
+.rectangulo04 {
+
+    height: 20em;
+    width: 10em;
+    background-color: rgb(70, 0, 128);
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+@media (max-width: 700px) {
+    .principal-01 {
         
         flex-direction: column;
     }
+    /* Media Queries
+    Las Media Queries son un tipo de consulta en base a las características del dispositivo que nos
+    permiten adaptar el diseño de nuestra web en función de si esta consulta se resuelve con true o
+    false. */
+    @media (max-width: 700px) {
+        .principal-02 {
+            
+            flex-direction: column;
+        }
 }
